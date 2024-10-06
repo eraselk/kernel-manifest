@@ -2,7 +2,8 @@
 <manifest>
   <remote  name="aosp" fetch="https://android.googlesource.com/" review="https://android-review.googlesource.com/" />
   <remote name="eraselk" fetch="https://github.com/eraselk/" />
-  
+  <remote name="clang" fetch="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86" revision="refs/heads/main" />
+
   <default revision="master-kernel-build-2021" remote="aosp" sync-j="4" />
   
   <superproject name="kernel/superproject" remote="aosp" revision="common-android12-5.10-lts" />
@@ -13,11 +14,11 @@
   <project path="kernel/configs" name="kernel/configs"/>
   <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="android12-5.10" />
   <project path="prebuilts/gas/linux-x86" name="platform/prebuilts/gas/linux-x86" clone-depth="1" />
-  <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" clone-depth="1" />
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" />
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" />
   <project path="prebuilts/tradefed" name="platform/tools/tradefederation/prebuilts" revision="main" clone-depth="1" />
   <project path="prebuilts/asuite" name="platform/prebuilts/asuite" revision="main" clone-depth="1" />
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" />
+  <project path="prebuilts/clang/host/linux-x86" name="main" clone-depth="1" remote="clang" />
 </manifest>
