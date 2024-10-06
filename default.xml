@@ -20,4 +20,4 @@
   <project path="prebuilts/tradefed" name="platform/tools/tradefederation/prebuilts" revision="main" clone-depth="1" />
   <project path="prebuilts/asuite" name="platform/prebuilts/asuite" revision="main" clone-depth="1" />
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" />
-  
+</manifest>
