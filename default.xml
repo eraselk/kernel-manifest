@@ -2,7 +2,6 @@
 <manifest>
   <remote  name="aosp" fetch="https://android.googlesource.com/" review="https://android-review.googlesource.com/" />
   <remote name="eraselk" fetch="https://github.com/eraselk/" />
-  <remote name="vermouth" fetch="https://gitlab.com/vermouth/" />
   <default revision="master-kernel-build-2021" remote="aosp" sync-j="4" />
   
   <superproject name="kernel/superproject" remote="aosp" revision="common-android12-5.10-lts" clone-depth="1" />
@@ -19,5 +18,4 @@
   <project path="prebuilts/tradefed" name="platform/tools/tradefederation/prebuilts" revision="main" clone-depth="1" />
   <project path="prebuilts/asuite" name="platform/prebuilts/asuite" revision="main" clone-depth="1" />
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" clone-depth="1" />
-  <project path="prebuilts-master/clang/host/linux-x86/clang-r536225" name="android_prebuilts_clang_host_linux-x86_clang-r536225" clone-depth="1" revision="14.0" remote="vermouth" />
 </manifest>
