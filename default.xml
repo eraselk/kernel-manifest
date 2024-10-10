@@ -7,7 +7,7 @@
   <superproject name="kernel/superproject" remote="aosp" revision="common-android12-5.10-lts" clone-depth="1" />
   <project path="build" name="kernel/build" clone-depth="1" />
   <project path="hikey-modules" name="kernel/hikey-modules" revision="android12-5.10" clone-depth="1" />
-  <project path="common" name="gki-5.10-2" remote="eraselk" revision="shirayuki" clone-depth="1" />
+  <project path="common" name="kernel_xiaomi_gold" remote="eraselk" revision="main" clone-depth="1" />
   <project path="kernel/tests" name="kernel/tests" revision="main" clone-depth="1" />
   <project path="kernel/configs" name="kernel/configs" clone-depth="1" />
   <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="android12-5.10" clone-depth="1" />
